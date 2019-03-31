@@ -1,2 +1,2 @@
 # Blender-GSoC
-[Proposal Draft](http://htmlpreview.github.com/?github.com/Tom007Cheung/Blender-GSoC/blob/master/proposal.html)
+[Proposal Draft](http://htmlpreview.github.com/?http://github.com/Tom007Cheung/Blender-GSoC/blob/master/proposal.html)
