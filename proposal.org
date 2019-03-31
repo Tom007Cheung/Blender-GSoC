@@ -1,0 +1,45 @@
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t broken-links:nil c:nil creator:nil
+#+OPTIONS: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+OPTIONS: timestamp:t title:t toc:t todo:t |:t
+#+TITLE: proposal
+#+DATE: <2019-03-31 Sun>
+#+AUTHOR: duzhe2
+#+EMAIL: duzhe2@huashidazhongbeitushuguan15deiMac-2.local
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 26.1 (Org mode 9.2)
+
+* Name
+YadongCheung 张亚栋
+
+* Contact
+Email:
+zhyd007@gmail.com
+10154508169@stu.ecnu.edu.cn
+IRC nick: Cheung
+
+* Synopsis
+
+* Benefits
+
+* Deliverables
+
+* Project Details
+
+* Project Schedule
+
+* Bio
+My name is Yadong Cheung, I live in China.
+Currently studying at East China Normal University(ECNU).
+I major in preschool education so I like 3D modules especially in animals.
+
+** Programming experience
+I like C programming language, and although I have no experience in products but
+I read the two books named The C Programming Language 2e and C Primer Plus 6e.
+I used to programming in XCode.
+
+* References
+
