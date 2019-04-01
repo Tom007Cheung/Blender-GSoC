@@ -47,16 +47,17 @@ zhyd007@gmail.com
 
 * TODO Deliverables
 
-* Project Details [1/6]
-  The major code is in source/blender/editors/space_outliner path.
+* Project Details [2/6]
+  The major code is in /source/blender/editors// *space_outliner* && *space_view3d*
+ path.
   - [X] Shift-select to select a range of items.\\
     It is related to *tree's traversal* problem,
   - [ ] Box selection by simple click and drag.
   - [ ] Shortcut keys for operations like delete, duplicate.
   - [ ] Arrow key navigation.
   - [ ] More consistent and powerful right-click menus.
-  - [ ] Sync selection between 3D viewport and outliner.
-
+  - [X] Sync selection between 3D viewport and outliner.\\
+    This has higher priority than the 1st item. 
 * TODO Project Schedule
 
 * Bio
