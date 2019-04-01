@@ -1,3 +1,4 @@
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 #+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
 #+OPTIONS: author:nil broken-links:nil c:nil creator:t
 #+OPTIONS: d:(not "LOGBOOK") date:nil e:t email:nil f:t inline:t num:nil
@@ -68,7 +69,7 @@ typesetting system, last year.
 
 ** Programming experience
 I like *C* language, and although I have no experience in products but I read the two books which are konwn as
-\\ *The C Programming Language* /2e/ and
+ *The C Programming Language* /2e/ and
 *C Primer Plus* /6e/. I used to programming in XCode and Eclipse.
 I learned *Python* from edx, which course is
  [[https://www.edx.org/course/introduction-to-computer-science-and-programming-using-python-0][Introduction to Computer Science and Programming Using Python]].
