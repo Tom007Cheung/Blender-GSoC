@@ -1,13 +1,12 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 #+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
-#+OPTIONS: author:nil broken-links:nil c:nil creator:t
-#+OPTIONS: d:(not "LOGBOOK") date:nil e:t email:nil f:t inline:t num:nil
+#+OPTIONS: author:t broken-links:nil c:nil creator:t
+#+OPTIONS: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:nil
 #+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
-#+OPTIONS: timestamp:t title:t toc:nil todo:t |:t
+#+OPTIONS: timestamp:t title:t toc:nil todo:t |:t 
 #+TITLE: proposal
-#+DATE: <2019-03-31 Sun>
+#+DATE: <2019-03-31 21:31 Sun>
 #+AUTHOR: Yadong Cheung
-#+EMAIL: zhyd007@gmail.com
 #+LANGUAGE: en
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
