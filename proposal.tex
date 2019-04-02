@@ -1,0 +1,104 @@
+% Created 2019-04-02 Tue 13:47
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Yadong Cheung}
+\date{\textit{<2019-03-31 Sun 21:31>}}
+\title{Outliner Improvements\\\medskip
+\large Proposal.pdf would be written in \LaTeX}
+\hypersetup{
+ pdfauthor={Yadong Cheung},
+ pdftitle={Outliner Improvements},
+ pdfkeywords={GSoC Blender},
+ pdfsubject={Apply for Blender of GSoC 2019},
+ pdfcreator={<a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="https://orgmode.org">Org</a> mode 9.2)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+
+\section*{Name}
+\label{sec:orgfdc24c8}
+Yadong Cheung 张亚栋
+
+\section*{Contact}
+\label{sec:org32b15e3}
+\textbf{Email:}
+
+zhyd007@gmail.com
+
+10154508169@stu.ecnu.edu.cn
+
+\textbf{IRC nick:} Cheung
+
+\section*{{\bfseries\sffamily TODO} Synopsis}
+\label{sec:org8f7978b}
+
+\section*{Benefits}
+\label{sec:orgec97abd}
+More user-friendly and powerful outliner.
+
+\section*{{\bfseries\sffamily TODO} Deliverables}
+\label{sec:org09d249c}
+
+\section*{Project Details [3/6]}
+\label{sec:org9a9b4d2}
+ The major code is in \emph{source/blender/editors/} \textbf{space\_outliner} \&\& \textbf{space\_view3d}
+path.
+\begin{itemize}
+\item[{$\boxtimes$}] Shift-select to select a range of items.\\
+It is related to \textbf{tree's traversal} problem,
+\item[{$\square$}] Box selection by simple click and drag.
+\item[{$\boxtimes$}] Shortcut keys for operations like delete, duplicate.\\
+\textbf{Keybinding} Sequence(meta keys)
+\begin{itemize}
+\item \textbf{M1}: This is the \emph{Delete} key
+\item \textbf{M2}: This is the \emph{Shift} key
+\item \textbf{M3}: This is the \emph{Ctrl} or \emph{command} key
+\end{itemize}
+\item[{$\square$}] Arrow key navigation.
+\item[{$\square$}] More consistent and powerful right-click menus.
+\item[{$\boxtimes$}] Sync selection between 3D viewport and outliner.\\
+This has higher priority than the 1st item. 
+We only need one way to show selections - the highlighted row.
+\end{itemize}
+\section*{Project Schedule}
+\label{sec:org0f145fa}
+I could finish this project in 12 weeks, and about 1 item per 2 weeks.
+
+\section*{Bio}
+\label{sec:org1df334f}
+  My name is Yadong Cheung, I live in China.
+Currently studying at East China Normal University(ECNU).
+I major in preschool education, UI design is my hobby, and I love 3D modules especially in animals.
+The first time that I know CG is the interdisciplinary course \emph{The Film and Television Direct} 
+I studied, which needed pecial effects modeling. HTML and CSS is based on web and it's designed for
+front-end engineer, maybe they could be helpful of outliner designing, I also started learning \TeX, the perfect
+typesetting system, last year. 
+
+\subsection*{Programming experience}
+\label{sec:org699c0d0}
+I like \textbf{C} language, and although I have no experience in products but I read the two books which are konwn as
+ \textbf{The C Programming Language} \emph{2e} and
+\textbf{C Primer Plus} \emph{6e}. I used to programming in XCode and Eclipse.
+I learned \textbf{Python} from edx, which course is
+ \href{https://www.edx.org/course/introduction-to-computer-science-and-programming-using-python-0}{Introduction to Computer Science and Programming Using Python}.
+
+\section*{References}
+\label{sec:orgee193f9}
+[1] Kulkarni, R. (2013). Instant Eclipse 4 RCP Development How-to. Packt Publishing Ltd.
+<a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="https://orgmode.org">Org</a> mode 9.2)
+\end{document}
