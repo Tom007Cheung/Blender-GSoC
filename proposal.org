@@ -4,7 +4,7 @@
 #+OPTIONS: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:nil
 #+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
 #+OPTIONS: timestamp:t title:t toc:nil todo:t |:t 
-#+TITLE: Outliner Improvements
+#+TITLE: Add more intelligent shortcut keys for outliner <draft>
 #+DATE: <2019-03-31 21:31 Sun>
 #+AUTHOR: Yadong Cheung
 #+LANGUAGE: en
@@ -40,31 +40,36 @@ zhyd007@gmail.com
 
 *IRC nick:* Cheung
 
-* TODO Synopsis
+* Synopsis
+  For artists, keyboard shortcuts may more convenient than buttons clicking, and most of all features can be implement, such
+ as "open files /<Ctrl+O>/", but there are some important features we need shortcuts, for example,to select all items 
+in-between, we  must click all one. 
+The project is designed to add more intelligent shortcuts to improve outliner.
 
 * Benefits
   More user-friendly and powerful outliner.
 
-* TODO Deliverables
-
+* Deliverables
+** Improvemt User Experience of Outliner.
+   - Enter /<Del>/ to delete object.
+   - Click the object you want to choose, press /<Shift>/ and click the last one you want, you will choose all between them.
+   - Click the first item you want to choose, press /<Ctrl>/ and click other ones, you can choose them ignore the other between them.
+   - Add a component "Synced Selection".
 * Project Details [3/6]
+  *code layout*: /space_outliner --> interface --> object --> windowmanager/ \\
   The major code is in /source/blender/editors// *space_outliner* && *space_view3d*
- path.
+ path.\\
+  - [X] Shortcut keys for operations.\\
+    *wm_keymap.c* defines keymap and includes *wm_event_types.h*, which contains /keyboard codes./
+  - [X] Sync selection between 3D viewport and outliner.\\
+    We only need one way to show selections - the highlighted row.
   - [X] Shift-select to select a range of items.\\
-    It is related to *tree's traversal* problem,
-  - [ ] Box selection by simple click and drag.
-  - [X] Shortcut keys for operations like delete, duplicate.\\
-    *Keybinding* Sequence(meta keys)
-    - *M1*: This is the /Delete/ key
-    - *M2*: This is the /Shift/ key
-    - *M3*: This is the /Ctrl/ or /command/ key
+    It is related to *tree's traversal* problem, and shortcut keys binding.
+  - [ ] Box selection by simple click and drag.\\  
   - [ ] Arrow key navigation.
   - [ ] More consistent and powerful right-click menus.
-  - [X] Sync selection between 3D viewport and outliner.\\
-    This has higher priority than the 1st item. 
-    We only need one way to show selections - the highlighted row.
 * Project Schedule
-  I could finish this project in 12 weeks, and about 1 item per 2 weeks.
+  I could finish this project in 12 weeks, and about 1 item per 2 weeks.(more details...)
 
 * Bio
   My name is Yadong Cheung, I live in China.
@@ -81,6 +86,3 @@ I like *C* language, and although I have no experience in products but I read th
 *C Primer Plus* /6e/. I used to programming in XCode and Eclipse.
 I learned *Python* from edx, which course is
  [[https://www.edx.org/course/introduction-to-computer-science-and-programming-using-python-0][Introduction to Computer Science and Programming Using Python]].
-
-* References
-[1] Kulkarni, R. (2013). Instant Eclipse 4 RCP Development How-to. Packt Publishing Ltd.

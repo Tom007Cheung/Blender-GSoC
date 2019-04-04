@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-04-02 Tue 13:46 -->
+<!-- 2019-04-04 Thu 16:06 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Outliner Improvements</title>
+<title>Add more intelligent shortcut keys for outliner &lt;draft&gt;</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Yadong Cheung" />
 <meta name="description" content="Apply for Blender of GSoC 2019"
@@ -273,24 +273,24 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Outliner Improvements
+<h1 class="title">Add more intelligent shortcut keys for outliner &lt;draft&gt;
 <br />
 <span class="subtitle">Proposal.pdf would be written in \(\LaTeX\)</span>
 </h1>
 
 
-<div id="outline-container-org520ff5b" class="outline-2">
-<h2 id="org520ff5b">Name</h2>
-<div class="outline-text-2" id="text-org520ff5b">
+<div id="outline-container-org3f0d60c" class="outline-2">
+<h2 id="org3f0d60c">Name</h2>
+<div class="outline-text-2" id="text-org3f0d60c">
 <p>
 Yadong Cheung 张亚栋
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgae4ce61" class="outline-2">
-<h2 id="orgae4ce61">Contact</h2>
-<div class="outline-text-2" id="text-orgae4ce61">
+<div id="outline-container-orga306cdf" class="outline-2">
+<h2 id="orga306cdf">Contact</h2>
+<div class="outline-text-2" id="text-orga306cdf">
 <p>
 <b>Email:</b>
 </p>
@@ -309,61 +309,76 @@ zhyd007@gmail.com
 </div>
 </div>
 
-<div id="outline-container-org88448e5" class="outline-2">
-<h2 id="org88448e5"><span class="todo TODO">TODO</span> Synopsis</h2>
+<div id="outline-container-org246a574" class="outline-2">
+<h2 id="org246a574">Synopsis</h2>
+<div class="outline-text-2" id="text-org246a574">
+<p>
+  For artists, keyboard shortcuts may more convenient than buttons clicking, and most of all features can be implement, such
+ as "open files <i>&lt;Ctrl+O&gt;</i>", but there are some important features we need shortcuts, for example,to select all items 
+in-between, we  must click all one. 
+The project is designed to add more intelligent shortcuts to improve outliner.
+</p>
+</div>
 </div>
 
-<div id="outline-container-org1562431" class="outline-2">
-<h2 id="org1562431">Benefits</h2>
-<div class="outline-text-2" id="text-org1562431">
+<div id="outline-container-orgeeb5751" class="outline-2">
+<h2 id="orgeeb5751">Benefits</h2>
+<div class="outline-text-2" id="text-orgeeb5751">
 <p>
 More user-friendly and powerful outliner.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org37f30c5" class="outline-2">
-<h2 id="org37f30c5"><span class="todo TODO">TODO</span> Deliverables</h2>
+<div id="outline-container-org1efcf8d" class="outline-2">
+<h2 id="org1efcf8d">Deliverables</h2>
+<div class="outline-text-2" id="text-org1efcf8d">
 </div>
-
-<div id="outline-container-org5507a6f" class="outline-2">
-<h2 id="org5507a6f">Project Details <code>[3/6]</code></h2>
-<div class="outline-text-2" id="text-org5507a6f">
-<p>
- The major code is in <i>source/blender/editors/</i> <b>space_outliner</b> &amp;&amp; <b>space_view3d</b>
-path.
-</p>
+<div id="outline-container-orgfcac8c3" class="outline-3">
+<h3 id="orgfcac8c3">Improvemt User Experience of Outliner.</h3>
+<div class="outline-text-3" id="text-orgfcac8c3">
 <ul class="org-ul">
-<li class="on"><code>[X]</code> Shift-select to select a range of items.<br />
-It is related to <b>tree's traversal</b> problem,</li>
-<li class="off"><code>[&#xa0;]</code> Box selection by simple click and drag.</li>
-<li class="on"><code>[X]</code> Shortcut keys for operations like delete, duplicate.<br />
-<b>Keybinding</b> Sequence(meta keys)
-<ul class="org-ul">
-<li><b>M1</b>: This is the <i>Delete</i> key</li>
-<li><b>M2</b>: This is the <i>Shift</i> key</li>
-<li><b>M3</b>: This is the <i>Ctrl</i> or <i>command</i> key</li>
-</ul></li>
-<li class="off"><code>[&#xa0;]</code> Arrow key navigation.</li>
-<li class="off"><code>[&#xa0;]</code> More consistent and powerful right-click menus.</li>
-<li class="on"><code>[X]</code> Sync selection between 3D viewport and outliner.<br />
-This has higher priority than the 1st item. 
-We only need one way to show selections - the highlighted row.</li>
+<li>Enter <i>&lt;Del&gt;</i> to delete object.</li>
+<li>Click the object you want to choose, press <i>&lt;Shift&gt;</i> and click the last one you want, you will choose all between them.</li>
+<li>Click the first item you want to choose, press <i>&lt;Ctrl&gt;</i> and click other ones, you can choose them ignore the other between them.</li>
+<li>Add a component "Synced Selection".</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org04c6392" class="outline-2">
-<h2 id="org04c6392">Project Schedule</h2>
-<div class="outline-text-2" id="text-org04c6392">
+</div>
+<div id="outline-container-orgcd76d66" class="outline-2">
+<h2 id="orgcd76d66">Project Details <code>[3/6]</code></h2>
+<div class="outline-text-2" id="text-orgcd76d66">
 <p>
-I could finish this project in 12 weeks, and about 1 item per 2 weeks.
+ <b>code layout</b>: <i>space_outliner &#x2013;&gt; interface &#x2013;&gt; object &#x2013;&gt; windowmanager</i> <br />
+ The major code is in <i>source/blender/editors/</i> <b>space_outliner</b> &amp;&amp; <b>space_view3d</b>
+path.<br />
+</p>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Shortcut keys for operations.<br />
+<b>wm_keymap.c</b> defines keymap and includes <b>wm_event_types.h</b>, which contains <i>keyboard codes.</i></li>
+<li class="on"><code>[X]</code> Sync selection between 3D viewport and outliner.<br />
+We only need one way to show selections - the highlighted row.</li>
+<li class="on"><code>[X]</code> Shift-select to select a range of items.<br />
+It is related to <b>tree's traversal</b> problem, and shortcut keys binding.</li>
+<li class="off"><code>[&#xa0;]</code> Box selection by simple click and drag.<br /></li>
+<li class="off"><code>[&#xa0;]</code> Arrow key navigation.</li>
+<li class="off"><code>[&#xa0;]</code> More consistent and powerful right-click menus.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org60456b7" class="outline-2">
+<h2 id="org60456b7">Project Schedule</h2>
+<div class="outline-text-2" id="text-org60456b7">
+<p>
+I could finish this project in 12 weeks, and about 1 item per 2 weeks.(more details&#x2026;)
 </p>
 </div>
 </div>
 
-<div id="outline-container-org06866bb" class="outline-2">
-<h2 id="org06866bb">Bio</h2>
-<div class="outline-text-2" id="text-org06866bb">
+<div id="outline-container-org8f27147" class="outline-2">
+<h2 id="org8f27147">Bio</h2>
+<div class="outline-text-2" id="text-org8f27147">
 <p>
   My name is Yadong Cheung, I live in China.
 Currently studying at East China Normal University(ECNU).
@@ -375,9 +390,9 @@ typesetting system, last year.
 </p>
 </div>
 
-<div id="outline-container-org89d4e54" class="outline-3">
-<h3 id="org89d4e54">Programming experience</h3>
-<div class="outline-text-3" id="text-org89d4e54">
+<div id="outline-container-org122ed82" class="outline-3">
+<h3 id="org122ed82">Programming experience</h3>
+<div class="outline-text-3" id="text-org122ed82">
 <p>
 I like <b>C</b> language, and although I have no experience in products but I read the two books which are konwn as
  <b>The C Programming Language</b> <i>2e</i> and
@@ -388,20 +403,11 @@ I learned <b>Python</b> from edx, which course is
 </div>
 </div>
 </div>
-
-<div id="outline-container-org50650fa" class="outline-2">
-<h2 id="org50650fa">References</h2>
-<div class="outline-text-2" id="text-org50650fa">
-<p>
-[1] Kulkarni, R. (2013). Instant Eclipse 4 RCP Development How-to. Packt Publishing Ltd.
-</p>
-</div>
-</div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: 2019-03-31 Sun 21:31</p>
 <p class="author">Author: Yadong Cheung</p>
-<p class="date">Created: 2019-04-02 Tue 13:46</p>
+<p class="date">Created: 2019-04-04 Thu 16:06</p>
 <p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="https://orgmode.org">Org</a> mode 9.2)</p>
 <p class="validation"></p>
 </div>
