@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-04-04 Thu 16:06 -->
+<!-- 2019-04-04 Thu 17:48 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Add more intelligent shortcut keys for outliner &lt;draft&gt;</title>
+<title>Add more intelligent shortcut keys to outliner &lt;draft&gt;</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Yadong Cheung" />
 <meta name="description" content="Apply for Blender of GSoC 2019"
@@ -273,24 +273,24 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Add more intelligent shortcut keys for outliner &lt;draft&gt;
+<h1 class="title">Add more intelligent shortcut keys to outliner &lt;draft&gt;
 <br />
 <span class="subtitle">Proposal.pdf would be written in \(\LaTeX\)</span>
 </h1>
 
 
-<div id="outline-container-org3f0d60c" class="outline-2">
-<h2 id="org3f0d60c">Name</h2>
-<div class="outline-text-2" id="text-org3f0d60c">
+<div id="outline-container-org1c56fe3" class="outline-2">
+<h2 id="org1c56fe3">Name</h2>
+<div class="outline-text-2" id="text-org1c56fe3">
 <p>
 Yadong Cheung 张亚栋
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga306cdf" class="outline-2">
-<h2 id="orga306cdf">Contact</h2>
-<div class="outline-text-2" id="text-orga306cdf">
+<div id="outline-container-orgb3af75f" class="outline-2">
+<h2 id="orgb3af75f">Contact</h2>
+<div class="outline-text-2" id="text-orgb3af75f">
 <p>
 <b>Email:</b>
 </p>
@@ -309,46 +309,46 @@ zhyd007@gmail.com
 </div>
 </div>
 
-<div id="outline-container-org246a574" class="outline-2">
-<h2 id="org246a574">Synopsis</h2>
-<div class="outline-text-2" id="text-org246a574">
+<div id="outline-container-orgf768033" class="outline-2">
+<h2 id="orgf768033">Synopsis</h2>
+<div class="outline-text-2" id="text-orgf768033">
 <p>
-  For artists, keyboard shortcuts may more convenient than buttons clicking, and most of all features can be implement, such
- as "open files <i>&lt;Ctrl+O&gt;</i>", but there are some important features we need shortcuts, for example,to select all items 
+  For artists, keyboard shortcuts may more convenient than buttons clicking, and most of all features can be implemented, such
+ as "open files <i>&lt;Ctrl+O&gt;</i>", but there are some important features we need shortcuts, for example, to select all items 
 in-between, we  must click all one. 
 The project is designed to add more intelligent shortcuts to improve outliner.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgeeb5751" class="outline-2">
-<h2 id="orgeeb5751">Benefits</h2>
-<div class="outline-text-2" id="text-orgeeb5751">
+<div id="outline-container-org533a713" class="outline-2">
+<h2 id="org533a713">Benefits</h2>
+<div class="outline-text-2" id="text-org533a713">
 <p>
 More user-friendly and powerful outliner.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org1efcf8d" class="outline-2">
-<h2 id="org1efcf8d">Deliverables</h2>
-<div class="outline-text-2" id="text-org1efcf8d">
+<div id="outline-container-org3677017" class="outline-2">
+<h2 id="org3677017">Deliverables</h2>
+<div class="outline-text-2" id="text-org3677017">
 </div>
-<div id="outline-container-orgfcac8c3" class="outline-3">
-<h3 id="orgfcac8c3">Improvemt User Experience of Outliner.</h3>
-<div class="outline-text-3" id="text-orgfcac8c3">
+<div id="outline-container-org38ba4a7" class="outline-3">
+<h3 id="org38ba4a7">Improvement User Experience of Outliner.</h3>
+<div class="outline-text-3" id="text-org38ba4a7">
 <ul class="org-ul">
 <li>Enter <i>&lt;Del&gt;</i> to delete object.</li>
 <li>Click the object you want to choose, press <i>&lt;Shift&gt;</i> and click the last one you want, you will choose all between them.</li>
-<li>Click the first item you want to choose, press <i>&lt;Ctrl&gt;</i> and click other ones, you can choose them ignore the other between them.</li>
+<li>Click the first item you want to choose, press <i>&lt;Ctrl&gt;</i> and click other ones, you can choose them and ignore the other between them.</li>
 <li>Add a component "Synced Selection".</li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-orgcd76d66" class="outline-2">
-<h2 id="orgcd76d66">Project Details <code>[3/6]</code></h2>
-<div class="outline-text-2" id="text-orgcd76d66">
+<div id="outline-container-orgd4fd2c2" class="outline-2">
+<h2 id="orgd4fd2c2">Project Details <code>[3/6]</code></h2>
+<div class="outline-text-2" id="text-orgd4fd2c2">
 <p>
  <b>code layout</b>: <i>space_outliner &#x2013;&gt; interface &#x2013;&gt; object &#x2013;&gt; windowmanager</i> <br />
  The major code is in <i>source/blender/editors/</i> <b>space_outliner</b> &amp;&amp; <b>space_view3d</b>
@@ -360,43 +360,43 @@ path.<br />
 <li class="on"><code>[X]</code> Sync selection between 3D viewport and outliner.<br />
 We only need one way to show selections - the highlighted row.</li>
 <li class="on"><code>[X]</code> Shift-select to select a range of items.<br />
-It is related to <b>tree's traversal</b> problem, and shortcut keys binding.</li>
+It is related to the <b>tree's traversal</b> problem, and shortcut keys binding.</li>
 <li class="off"><code>[&#xa0;]</code> Box selection by simple click and drag.<br /></li>
 <li class="off"><code>[&#xa0;]</code> Arrow key navigation.</li>
 <li class="off"><code>[&#xa0;]</code> More consistent and powerful right-click menus.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org60456b7" class="outline-2">
-<h2 id="org60456b7">Project Schedule</h2>
-<div class="outline-text-2" id="text-org60456b7">
+<div id="outline-container-org0f8169c" class="outline-2">
+<h2 id="org0f8169c">Project Schedule</h2>
+<div class="outline-text-2" id="text-org0f8169c">
 <p>
-I could finish this project in 12 weeks, and about 1 item per 2 weeks.(more details&#x2026;)
+I could finish this project in 12 weeks and about 1 item per 2 weeks. (more details&#x2026;)
 </p>
 </div>
 </div>
 
-<div id="outline-container-org8f27147" class="outline-2">
-<h2 id="org8f27147">Bio</h2>
-<div class="outline-text-2" id="text-org8f27147">
+<div id="outline-container-orgb2cc91c" class="outline-2">
+<h2 id="orgb2cc91c">Bio</h2>
+<div class="outline-text-2" id="text-orgb2cc91c">
 <p>
   My name is Yadong Cheung, I live in China.
 Currently studying at East China Normal University(ECNU).
 I major in preschool education, UI design is my hobby, and I love 3D modules especially in animals.
 The first time that I know CG is the interdisciplinary course <i>The Film and Television Direct</i> 
-I studied, which needed pecial effects modeling. HTML and CSS is based on web and it's designed for
+I studied, which needed special effects modeling. HTML and CSS are based on web and it's designed for
 front-end engineer, maybe they could be helpful of outliner designing, I also started learning \(\TeX\), the perfect
 typesetting system, last year. 
 </p>
 </div>
 
-<div id="outline-container-org122ed82" class="outline-3">
-<h3 id="org122ed82">Programming experience</h3>
-<div class="outline-text-3" id="text-org122ed82">
+<div id="outline-container-orgbce1438" class="outline-3">
+<h3 id="orgbce1438">Programming experience</h3>
+<div class="outline-text-3" id="text-orgbce1438">
 <p>
-I like <b>C</b> language, and although I have no experience in products but I read the two books which are konwn as
+I like <b>C</b> language, and although I have no experience in products but I read the two books which are known as
  <b>The C Programming Language</b> <i>2e</i> and
-<b>C Primer Plus</b> <i>6e</i>. I used to programming in XCode and Eclipse.
+<b>C Primer Plus</b> <i>6e</i>. I used to programme in XCode and Eclipse.
 I learned <b>Python</b> from edx, which course is
  <a href="https://www.edx.org/course/introduction-to-computer-science-and-programming-using-python-0">Introduction to Computer Science and Programming Using Python</a>.
 </p>
@@ -407,7 +407,7 @@ I learned <b>Python</b> from edx, which course is
 <div id="postamble" class="status">
 <p class="date">Date: 2019-03-31 Sun 21:31</p>
 <p class="author">Author: Yadong Cheung</p>
-<p class="date">Created: 2019-04-04 Thu 16:06</p>
+<p class="date">Created: 2019-04-04 Thu 17:48</p>
 <p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="https://orgmode.org">Org</a> mode 9.2)</p>
 <p class="validation"></p>
 </div>
