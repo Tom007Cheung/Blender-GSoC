@@ -1,4 +1,4 @@
-% Created 2019-04-04 Thu 10:13
+% Created 2019-04-04 Thu 16:09
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -16,11 +16,11 @@
 \usepackage{hyperref}
 \author{Yadong Cheung}
 \date{\textit{<2019-03-31 Sun 21:31>}}
-\title{Add more keyshort for outliner<draft>\\\medskip
+\title{Add more intelligent shortcut keys for outliner <draft>\\\medskip
 \large Proposal.pdf would be written in \LaTeX}
 \hypersetup{
  pdfauthor={Yadong Cheung},
- pdftitle={Add more keyshort for outliner<draft>},
+ pdftitle={Add more intelligent shortcut keys for outliner <draft>},
  pdfkeywords={GSoC Blender},
  pdfsubject={Apply for Blender of GSoC 2019},
  pdfcreator={<a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="https://orgmode.org">Org</a> mode 9.2)}, 
@@ -31,11 +31,11 @@
 
 
 \section*{Name}
-\label{sec:org039d390}
+\label{sec:org9a11a28}
 Yadong Cheung 张亚栋
 
 \section*{Contact}
-\label{sec:org0be7834}
+\label{sec:orge37a461}
 \textbf{Email:}
 
 zhyd007@gmail.com
@@ -44,44 +44,49 @@ zhyd007@gmail.com
 
 \textbf{IRC nick:} Cheung
 
-\section*{{\bfseries\sffamily TODO} Synopsis}
-\label{sec:orgf214ac8}
+\section*{Synopsis}
+\label{sec:org8f5703a}
+  For artists, keyboard shortcuts may more convenient than buttons clicking, and most of all features can be implement, such
+ as "open files \emph{<Ctrl+O>}", but there are some important features we need shortcuts, for example,to select all items 
+in-between, we  must click all one. 
+The project is designed to add more intelligent shortcuts to improve outliner.
 
 \section*{Benefits}
-\label{sec:org2a8946b}
+\label{sec:org7bc30ae}
 More user-friendly and powerful outliner.
 
-\section*{{\bfseries\sffamily TODO} Deliverables}
-\label{sec:org54d0a62}
-
-\section*{Project Details [3/6]}
-\label{sec:orge853eeb}
- The major code is in \emph{source/blender/editors/} \textbf{space\_outliner} \&\& \textbf{space\_view3d}
-path.
+\section*{Deliverables}
+\label{sec:orge87d1f9}
+\subsection*{Improvemt User Experience of Outliner.}
+\label{sec:org5d8b60c}
 \begin{itemize}
+\item Enter \emph{<Del>} to delete object.
+\item Click the object you want to choose, press \emph{<Shift>} and click the last one you want, you will choose all between them.
+\item Click the first item you want to choose, press \emph{<Ctrl>} and click other ones, you can choose them ignore the other between them.
+\item Add a component "Synced Selection".
+\end{itemize}
+\section*{Project Details [3/6]}
+\label{sec:org5ae2747}
+ \textbf{code layout}: \emph{space\_outliner --> interface --> object --> windowmanager} \\
+ The major code is in \emph{source/blender/editors/} \textbf{space\_outliner} \&\& \textbf{space\_view3d}
+path.\\
+\begin{itemize}
+\item[{$\boxtimes$}] Shortcut keys for operations.\\
+\textbf{wm\_keymap.c} defines keymap and includes \textbf{wm\_event\_types.h}, which contains \emph{keyboard codes.}
 \item[{$\boxtimes$}] Sync selection between 3D viewport and outliner.\\
 We only need one way to show selections - the highlighted row.
 \item[{$\boxtimes$}] Shift-select to select a range of items.\\
-It is related to \textbf{tree's traversal} problem,
-\item[{$\square$}] Box selection by simple click and drag.
-\item[{$\boxtimes$}] Shortcut keys for operations like delete, duplicate.\\
-\begin{verbatim}
-int main( int argc, char *argv)
-{
-    WM_main(C);
-
-    return 0;
-}
-\end{verbatim}
+It is related to \textbf{tree's traversal} problem, and shortcut keys binding.
+\item[{$\square$}] Box selection by simple click and drag.\\
 \item[{$\square$}] Arrow key navigation.
 \item[{$\square$}] More consistent and powerful right-click menus.
 \end{itemize}
 \section*{Project Schedule}
-\label{sec:org459aebe}
-I could finish this project in 12 weeks, and about 1 item per 2 weeks.
+\label{sec:orgc8efe29}
+I could finish this project in 12 weeks, and about 1 item per 2 weeks.(more details\ldots{})
 
 \section*{Bio}
-\label{sec:org5f2548f}
+\label{sec:orga40ab8d}
   My name is Yadong Cheung, I live in China.
 Currently studying at East China Normal University(ECNU).
 I major in preschool education, UI design is my hobby, and I love 3D modules especially in animals.
@@ -91,11 +96,12 @@ front-end engineer, maybe they could be helpful of outliner designing, I also st
 typesetting system, last year. 
 
 \subsection*{Programming experience}
-\label{sec:org0ea0b54}
+\label{sec:org01b8281}
 I like \textbf{C} language, and although I have no experience in products but I read the two books which are konwn as
  \textbf{The C Programming Language} \emph{2e} and
 \textbf{C Primer Plus} \emph{6e}. I used to programming in XCode and Eclipse.
 I learned \textbf{Python} from edx, which course is
- \href{https://www.edx.org/course/introduction-to-computer-science-and-programming-using-python-0}{Introduction to Computer Science and Programming Using Python}.
-<a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="https://orgmode.org">Org</a> mode 9.2)
+ \href{https://www.edx.org/course/introduction-to-computer-science-and-programming-using-python-0}{Introduction to Computer Science and Programming Using Python}.\\
+ \vfill
+Edited by \href{https://www.gnu.org/software/emacs/}{Emacs}26.1 \href{https://orgmode.org}{Org  mode} 9.2
 \end{document}
